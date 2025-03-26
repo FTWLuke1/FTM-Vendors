@@ -1,13 +1,16 @@
 const canvas = document.getElementById('backgroundCanvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight; // Adjusts to the content height
+}
+resizeCanvas();
 
 const dots = [];
 
 function createDots() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 150; i++) {
         dots.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
@@ -35,7 +38,7 @@ function updateDots() {
         dot.y += dot.speedY;
 
         if (dot.x < 0 || dot.x > canvas.width) dot.speedX *= -1;
-        if (dot.y < 0 || dot.y > canvas.height) dot.speedY *= -1;
+        if (dot.y < 120 || dot.y > canvas.height) dot.speedY *= -1; // Keeps dots below the header
     });
 }
 
@@ -45,12 +48,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    dots.length = 0;
-    createDots();
-});
+window.addEventListener('resize', resizeCanvas);
 
 createDots();
 animate();

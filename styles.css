@@ -10,7 +10,42 @@ body {
     text-align: center;
 }
 
-/* Header Design */
+/* Cloud Logo */
+.cloud-logo {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid black;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Extra cloud bumps */
+.cloud-logo::before,
+.cloud-logo::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.cloud-logo::before {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 20px;
+}
+
+.cloud-logo::after {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: 20px;
+}
+
+/* Header */
 header {
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -21,7 +56,7 @@ header {
 h1 {
     font-family: 'Lobster', cursive;
     font-size: 48px;
-    color: lightblue;
+    color: black;
     margin: 0;
 }
 

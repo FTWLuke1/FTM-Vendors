@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTM Vendors</title>
-    
-    <!-- Google Font: Lobster -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            background-color: black;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .header-container {
-            background-color: black;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .header-container h1 {
-            color: lightblue;
-            font-family: 'Lobster', cursive;
-            font-size: 48px;
-            margin: 0;
-        }
-        .header-container p {
-            color: white;
-            font-family: 'Lobster', cursive;
-            font-size: 24px;
-            margin: 5px 0 0;
-        }
-    </style>
+    <title>FTM Vendors - The Truth In The Lies</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1 class="ftm-title">FTM Vendors</h1>
+        <p class="motto">The Truth In The Lies</p>
+    </header>
 
-    <div class="header-container">
-        <h1>FTM Vendors</h1>
-        <p>The Truth In The Lies</p>
+    <div id="animation-wrapper">
+        <canvas id="backgroundCanvas"></canvas>
+
+        <main>
+            <section class="vendor-list">
+                <h2>Our Vendors</h2>
+                <div class="vendor-container">
+                    <div class="vendor-card"><a href="#" class="button">AirPods</a></div>
+                    <div class="vendor-card"><a href="#" class="button">Cologne</a></div>
+                    <div class="vendor-card"><a href="#" class="button">Apparel</a></div>
+                    <div class="vendor-card"><a href="#" class="button">Shoes</a></div>
+                </div>
+            </section>
+
+            <section class="extra-links">
+                <h2>More Info</h2>
+                <div class="link-container">
+                    <a href="#" class="button secondary">About Us</a>
+                    <a href="#" class="button secondary">Socials</a>
+                    <a href="#" class="button secondary">Contact Me</a>
+                </div>
+            </section>
+        </main>
     </div>
 
+    <footer>
+        <p>© 2025 FTM Vendors. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

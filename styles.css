@@ -10,68 +10,33 @@ body {
     text-align: center;
 }
 
-/* Cloud Logo */
-.cloud-logo {
-    display: inline-block;
-    padding: 20px 50px;
-    background-color: white;
-    border-radius: 50px;
-    border: 3px solid black;
-    position: relative;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Extra cloud bumps */
-.cloud-logo::before,
-.cloud-logo::after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-.cloud-logo::before {
-    width: 40px;
-    height: 40px;
-    top: -20px;
-    left: 20px;
-}
-
-.cloud-logo::after {
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    right: 20px;
-}
-
 /* Header */
 header {
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     font-family: 'Lobster', cursive;
-    font-size: 48px;
-    color: black;
+    font-size: 50px;
+    color: lightblue;
     margin: 0;
 }
 
 .motto {
-    font-size: 18px;
+    font-size: 20px;
     color: tan;
     margin-top: 5px;
 }
 
-/* Vendor List Section */
+/* Vendor Section */
 .vendor-list {
-    margin-top: 50px;
+    margin-top: 40px;
     background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    width: 50%;
+    padding: 25px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -79,28 +44,22 @@ h1 {
 }
 
 .vendor-list h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
     color: black;
 }
 
-/* Vendor Buttons */
+/* Buttons */
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: bold;
 }
 
 .button {
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -114,6 +73,22 @@ li {
     color: black;
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Extra Buttons Section */
+.extra-links {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.secondary {
+    background-color: tan;
+    color: black;
+}
+
+.secondary:hover {
+    background-color: lightblue;
+    color: white;
 }
 
 /* Footer */

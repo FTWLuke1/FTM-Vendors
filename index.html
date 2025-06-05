@@ -1,46 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTM Vendors - The Truth In The Lies</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D1Goat0 | Pentest Gear & Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #161b22;
+      border-bottom: 2px solid #30363d;
+    }
+
+    header img {
+      max-width: 300px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: #0d1117;
+      border-bottom: 1px solid #30363d;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px solid #21262d;
+    }
+
+    h2 {
+      color: #58a6ff;
+    }
+
+    a {
+      color: #58a6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #161b22;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 class="ftm-title">FTM Vendors</h1>
-        <p class="motto">The Truth In The Lies</p>
-    </header>
 
-    <div id="animation-wrapper">
-        <canvas id="backgroundCanvas"></canvas>
+  <header>
+    <img src="https://socialify.git.ci/FTWLuke1/D1HackGear/image?description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Auto" alt="D1Goat0 Banner">
+    <h1>D1Goat0 - Pentest Tools & Custom Hardware</h1>
+    <p>Tools, scripts, STL files, and more – built for hackers, by a hacker.</p>
+  </header>
 
-        <main>
-            <section class="vendor-list">
-                <h2>Our Vendors</h2>
-                <div class="vendor-container">
-                    <div class="vendor-card"><a href="#" class="button">AirPods</a></div>
-                    <div class="vendor-card"><a href="#" class="button">Cologne</a></div>
-                    <div class="vendor-card"><a href="#" class="button">Apparel</a></div>
-                    <div class="vendor-card"><a href="#" class="button">Shoes</a></div>
-                </div>
-            </section>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#buy">Buy My Products</a>
+    <a href="#where">Where to Buy</a>
+    <a href="#projects">Projects</a>
+    <a href="#collab">Collaborations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-            <section class="extra-links">
-                <h2>More Info</h2>
-                <div class="link-container">
-                    <a href="#" class="button secondary">About Us</a>
-                    <a href="#" class="button secondary">Socials</a>
-                    <a href="#" class="button secondary">Contact Me</a>
-                </div>
-            </section>
-        </main>
-    </div>
+  <section id="about">
+    <h2>💫 About Me</h2>
+    <p>I'm <strong>D1Goat0</strong>, a penetration tester and hardware hacker currently developing <strong>Infiltra Network</strong>. I'm learning more about C++, HTML, and embedded systems, and love building custom tools for real-world security work.</p>
+    <p>I regularly post content on <a href="https://www.tiktok.com/@d1goat0" target="_blank">TikTok</a> and share full tools on <a href="https://github.com/FTWLuke1" target="_blank">GitHub</a>.</p>
+  </section>
 
-    <footer>
-        <p>© 2025 FTM Vendors. All Rights Reserved.</p>
-    </footer>
+  <section id="buy">
+    <h2>🛒 Buy My Products</h2>
+    <p>All my devices include:</p>
+    <ul>
+      <li>STL files for 3D-printed parts</li>
+      <li>Flashing firmware</li>
+      <li>Setup instructions & payloads</li>
+    </ul>
+    <p><strong>📦 Coming soon:</strong> online shop for ordering completed kits and parts.</p>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="where">
+    <h2>📦 Where to Buy</h2>
+    <p>You can build or buy parts from:</p>
+    <ul>
+      <li><a href="#">[Add Your Storefront or Gumroad/Etsy Link Here]</a></li>
+      <li>Links are included per device in my <a href="https://github.com/FTWLuke1/D1HackGear/tree/main" target="_blank">GitHub repo</a>.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>💻 My Projects</h2>
+    <p>Explore all my work in one place:</p>
+    <ul>
+      <li><a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear</a> – Full repo of tools, scripts, and STL files</li>
+      <li>Infiltra Network – My current stealth-focused hardware platform</li>
+    </ul>
+  </section>
+
+  <section id="collab">
+    <h2>🤝 Collaborations</h2>
+    <p>I’m open to working on:</p>
+    <ul>
+      <li>PCB and embedded development</li>
+      <li>Security research tools</li>
+      <li>Custom 3D-printed pentest gear</li>
+    </ul>
+    <p>If you're into hacking, design, or hardware, let's build something.</p>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:imlukeyo@outlook.com">imlukeyo@outlook.com</a></li>
+      <li>GitHub: <a href="https://github.com/FTWLuke1" target="_blank">@FTWLuke1</a></li>
+      <li>TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
+      <li>Discord: d1goat0#XXXX</li> <!-- Replace XXXX with your tag -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 D1Goat0 | Built for hackers, by a hacker.</p>
+  </footer>
+
 </body>
 </html>

@@ -4,64 +4,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>D1Goat0 | Pentest Gear & Projects</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    /* Base styling */
+    * {
       margin: 0;
-      font-family: 'Fira Code', monospace;
-      background-color: #0d1117;
-      color: #c9d1d9;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0f14;
+      color: #e2e8f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
     }
 
     header {
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: #161b22;
-      border-bottom: 2px solid #30363d;
+      padding: 3rem 1rem 2rem;
     }
 
     header img {
-      max-width: 300px;
+      max-width: 280px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      background: #111319;
       padding: 1rem;
-      background-color: #0d1117;
-      border-bottom: 1px solid #30363d;
+      border-top: 1px solid #1f1f24;
+      border-bottom: 1px solid #1f1f24;
     }
 
     nav a {
       color: #58a6ff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #8ab4f8;
     }
 
     section {
-      padding: 2rem 1.5rem;
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
-      border-bottom: 1px solid #21262d;
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid #1f1f24;
     }
 
     h2 {
+      font-size: 1.6rem;
       color: #58a6ff;
+      margin-bottom: 1rem;
     }
 
-    a {
-      color: #58a6ff;
+    p, li {
+      font-size: 1rem;
+      color: #c9d1d9;
+    }
+
+    ul {
+      padding-left: 1.5rem;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      background-color: #161b22;
+      color: #6e7681;
+    }
+
+    /* Background animation */
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(#1a1f2b 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.04;
+      z-index: -1;
+      animation: moveBackground 20s linear infinite;
+    }
+
+    @keyframes moveBackground {
+      from { background-position: 0 0; }
+      to { background-position: 100px 100px; }
     }
 
     @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
       nav {
         flex-direction: column;
       }
@@ -70,65 +118,67 @@
 </head>
 <body>
 
+  <div class="background"></div>
+
   <header>
-    <img src="https://socialify.git.ci/FTWLuke1/D1HackGear/image?description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Auto" alt="D1Goat0 Banner">
-    <h1>D1Goat0 - Pentest Tools & Custom Hardware</h1>
-    <p>Tools, scripts, STL files, and more – built for hackers, by a hacker.</p>
+    <img src="https://socialify.git.ci/FTWLuke1/D1HackGear/image?description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Auto" alt="D1Goat0 Banner" />
+    <h1>D1Goat0 - Pentest Gear & Projects</h1>
   </header>
 
   <nav>
     <a href="#about">About Me</a>
-    <a href="#buy">Buy My Products</a>
-    <a href="#where">Where to Buy</a>
-    <a href="#projects">Projects</a>
+    <a href="#products">Buy My Products</a>
+    <a href="#buy">Where to Buy</a>
+    <a href="#projects">My Projects</a>
     <a href="#collab">Collaborations</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>💫 About Me</h2>
-    <p>I'm <strong>D1Goat0</strong>, a penetration tester and hardware hacker currently developing <strong>Infiltra Network</strong>. I'm learning more about C++, HTML, and embedded systems, and love building custom tools for real-world security work.</p>
-    <p>I regularly post content on <a href="https://www.tiktok.com/@d1goat0" target="_blank">TikTok</a> and share full tools on <a href="https://github.com/FTWLuke1" target="_blank">GitHub</a>.</p>
+    <p>I'm <strong>D1Goat0</strong>, a penetration tester and hardware hacker currently developing <strong>Infiltra Network</strong>.</p>
+    <p>Focused on embedded systems, custom devices, and offensive tools. I'm learning more C++ and HTML, and looking to collaborate with people building PCB/code-based gear.</p>
+  </section>
+
+  <section id="products">
+    <h2>🛒 Buy My Products</h2>
+    <p>Every product I release comes with:</p>
+    <ul>
+      <li>3D-printable STL files</li>
+      <li>Custom firmware or payloads</li>
+      <li>Complete instructions and diagrams</li>
+    </ul>
+    <p><strong>Shop coming soon.</strong> Until then, check my repo for full DIY instructions.</p>
   </section>
 
   <section id="buy">
-    <h2>🛒 Buy My Products</h2>
-    <p>All my devices include:</p>
-    <ul>
-      <li>STL files for 3D-printed parts</li>
-      <li>Flashing firmware</li>
-      <li>Setup instructions & payloads</li>
-    </ul>
-    <p><strong>📦 Coming soon:</strong> online shop for ordering completed kits and parts.</p>
-  </section>
-
-  <section id="where">
     <h2>📦 Where to Buy</h2>
-    <p>You can build or buy parts from:</p>
+    <p>You’ll be able to buy full kits and components via my storefront (coming soon).</p>
+    <p>For now, each folder in my GitHub repo includes:</p>
     <ul>
-      <li><a href="#">[Add Your Storefront or Gumroad/Etsy Link Here]</a></li>
-      <li>Links are included per device in my <a href="https://github.com/FTWLuke1/D1HackGear/tree/main" target="_blank">GitHub repo</a>.</li>
+      <li>Component lists</li>
+      <li>Recommended suppliers</li>
+      <li>Links to order parts</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>💻 My Projects</h2>
-    <p>Explore all my work in one place:</p>
     <ul>
-      <li><a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear</a> – Full repo of tools, scripts, and STL files</li>
-      <li>Infiltra Network – My current stealth-focused hardware platform</li>
+      <li><a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear</a> – full library of tools & STL files</li>
+      <li><strong>Infiltra Network</strong> – active stealth & testing platform</li>
     </ul>
   </section>
 
   <section id="collab">
     <h2>🤝 Collaborations</h2>
-    <p>I’m open to working on:</p>
+    <p>I’m open to working with:</p>
     <ul>
-      <li>PCB and embedded development</li>
-      <li>Security research tools</li>
-      <li>Custom 3D-printed pentest gear</li>
+      <li>PCB designers & embedded developers</li>
+      <li>Security researchers</li>
+      <li>Hardware hackers & tinkerers</li>
     </ul>
-    <p>If you're into hacking, design, or hardware, let's build something.</p>
+    <p>Got a wild idea? Let’s build it together.</p>
   </section>
 
   <section id="contact">
@@ -137,12 +187,12 @@
       <li>Email: <a href="mailto:imlukeyo@outlook.com">imlukeyo@outlook.com</a></li>
       <li>GitHub: <a href="https://github.com/FTWLuke1" target="_blank">@FTWLuke1</a></li>
       <li>TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
-      <li>Discord: d1goat0#XXXX</li> <!-- Replace XXXX with your tag -->
+      <li>Discord: d1goat0#XXXX <!-- Add your tag --> </li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 D1Goat0 | Built for hackers, by a hacker.</p>
+    <p>© 2025 D1Goat0 — Built for hackers, by a hacker.</p>
   </footer>
 
 </body>

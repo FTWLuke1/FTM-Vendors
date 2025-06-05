@@ -2,57 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>D1Goat0 | Pentest Gear & Projects</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D1Goat0 | Pentest Projects & Gear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    /* Base styling */
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
-    body {
+    html, body {
       font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
       background: #0d0f14;
-      color: #e2e8f0;
-      line-height: 1.6;
+      color: #e0e0e0;
       overflow-x: hidden;
-      position: relative;
     }
 
-    header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
+    /* Splash Screen */
+    #splash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0d0f14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      flex-direction: column;
+      animation: fadeOut 2s ease 2.5s forwards;
     }
 
-    header img {
-      max-width: 280px;
-      margin-bottom: 1rem;
+    #splash h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 1.5s ease 0.5s forwards;
     }
 
-    header h1 {
-      font-size: 2rem;
-      font-weight: 700;
+    #splash p {
+      opacity: 0;
+      animation: fadeIn 1.5s ease 1.2s forwards;
     }
 
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    /* Navigation */
     nav {
+      position: sticky;
+      top: 0;
+      background: rgba(13, 15, 20, 0.9);
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 1.2rem;
-      background: #111319;
       padding: 1rem;
-      border-top: 1px solid #1f1f24;
-      border-bottom: 1px solid #1f1f24;
+      border-bottom: 1px solid #1a1a1a;
+      z-index: 9;
     }
 
     nav a {
-      color: #58a6ff;
       text-decoration: none;
+      color: #58a6ff;
       font-weight: 600;
-      transition: 0.2s;
+      transition: color 0.2s;
     }
 
     nav a:hover {
@@ -60,21 +81,29 @@
     }
 
     section {
-      max-width: 800px;
+      padding: 4rem 1.5rem;
+      max-width: 900px;
       margin: auto;
-      padding: 3rem 1.5rem;
-      border-bottom: 1px solid #1f1f24;
+      animation: fadeInSection 1s ease forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    @keyframes fadeInSection {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h2 {
-      font-size: 1.6rem;
       color: #58a6ff;
       margin-bottom: 1rem;
     }
 
     p, li {
       font-size: 1rem;
-      color: #c9d1d9;
+      margin-bottom: 0.6rem;
     }
 
     ul {
@@ -85,115 +114,141 @@
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #6e7681;
+      color: #7a7a7a;
     }
 
-    /* Background animation */
-    .background {
+    /* Background particles */
+    canvas#bg {
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: radial-gradient(#1a1f2b 1px, transparent 1px);
-      background-size: 40px 40px;
-      opacity: 0.04;
-      z-index: -1;
-      animation: moveBackground 20s linear infinite;
-    }
-
-    @keyframes moveBackground {
-      from { background-position: 0 0; }
-      to { background-position: 100px 100px; }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      nav {
-        flex-direction: column;
-      }
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
 
-  <div class="background"></div>
+<!-- Background Particles -->
+<canvas id="bg"></canvas>
 
-  <header>
-    <img src="https://socialify.git.ci/FTWLuke1/D1HackGear/image?description=1&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Auto" alt="D1Goat0 Banner" />
-    <h1>D1Goat0 - Pentest Gear & Projects</h1>
-  </header>
+<!-- Splash Screen -->
+<div id="splash">
+  <h1>D1Goat0</h1>
+  <p>Pentest Gear & Projects</p>
+</div>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#products">Buy My Products</a>
-    <a href="#buy">Where to Buy</a>
-    <a href="#projects">My Projects</a>
-    <a href="#collab">Collaborations</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- Navigation -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#buy">Buy</a>
+  <a href="#projects">Projects</a>
+  <a href="#collab">Collaborations</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="about">
-    <h2>💫 About Me</h2>
-    <p>I'm <strong>D1Goat0</strong>, a penetration tester and hardware hacker currently developing <strong>Infiltra Network</strong>.</p>
-    <p>Focused on embedded systems, custom devices, and offensive tools. I'm learning more C++ and HTML, and looking to collaborate with people building PCB/code-based gear.</p>
-  </section>
+<!-- Sections -->
+<section id="about">
+  <h2>💫 About Me</h2>
+  <p>I'm <strong>D1Goat0</strong>, a pentester and hardware hacker building tools for real-world offensive security. Currently working on <strong>Infiltra Network</strong>, and exploring C++, embedded systems, and stealth devices.</p>
+</section>
 
-  <section id="products">
-    <h2>🛒 Buy My Products</h2>
-    <p>Every product I release comes with:</p>
-    <ul>
-      <li>3D-printable STL files</li>
-      <li>Custom firmware or payloads</li>
-      <li>Complete instructions and diagrams</li>
-    </ul>
-    <p><strong>Shop coming soon.</strong> Until then, check my repo for full DIY instructions.</p>
-  </section>
+<section id="products">
+  <h2>🛠 Buy My Products</h2>
+  <p>Each device I release includes:</p>
+  <ul>
+    <li>STL files for 3D printing</li>
+    <li>Custom firmware & payloads</li>
+    <li>Step-by-step build instructions</li>
+  </ul>
+  <p><strong>Shop launching soon</strong> – for now, find files in my GitHub repo.</p>
+</section>
 
-  <section id="buy">
-    <h2>📦 Where to Buy</h2>
-    <p>You’ll be able to buy full kits and components via my storefront (coming soon).</p>
-    <p>For now, each folder in my GitHub repo includes:</p>
-    <ul>
-      <li>Component lists</li>
-      <li>Recommended suppliers</li>
-      <li>Links to order parts</li>
-    </ul>
-  </section>
+<section id="buy">
+  <h2>📦 Where to Buy</h2>
+  <p>Check GitHub folders for parts, links, and PCB sources. Full kits coming soon.</p>
+</section>
 
-  <section id="projects">
-    <h2>💻 My Projects</h2>
-    <ul>
-      <li><a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear</a> – full library of tools & STL files</li>
-      <li><strong>Infiltra Network</strong> – active stealth & testing platform</li>
-    </ul>
-  </section>
+<section id="projects">
+  <h2>💻 My Projects</h2>
+  <ul>
+    <li><a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear</a> – Complete toolkit & STL repo</li>
+    <li>Infiltra – Stealth testing hardware platform</li>
+  </ul>
+</section>
 
-  <section id="collab">
-    <h2>🤝 Collaborations</h2>
-    <p>I’m open to working with:</p>
-    <ul>
-      <li>PCB designers & embedded developers</li>
-      <li>Security researchers</li>
-      <li>Hardware hackers & tinkerers</li>
-    </ul>
-    <p>Got a wild idea? Let’s build it together.</p>
-  </section>
+<section id="collab">
+  <h2>🤝 Collaborations</h2>
+  <p>Open to working on:</p>
+  <ul>
+    <li>PCB design + embedded dev</li>
+    <li>Hardware-focused pen testing tools</li>
+    <li>Creative hardware exploits</li>
+  </ul>
+</section>
 
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:imlukeyo@outlook.com">imlukeyo@outlook.com</a></li>
-      <li>GitHub: <a href="https://github.com/FTWLuke1" target="_blank">@FTWLuke1</a></li>
-      <li>TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
-      <li>Discord: d1goat0#XXXX <!-- Add your tag --> </li>
-    </ul>
-  </section>
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:imlukeyo@outlook.com">imlukeyo@outlook.com</a></li>
+    <li>GitHub: <a href="https://github.com/FTWLuke1" target="_blank">@FTWLuke1</a></li>
+    <li>TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
+    <li>Discord: d1goat0#XXXX</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>© 2025 D1Goat0 — Built for hackers, by a hacker.</p>
-  </footer>
+<footer>
+  <p>© 2025 D1Goat0 — Built for hackers, by a hacker.</p>
+</footer>
+
+<!-- Simple particle background script -->
+<script>
+  const canvas = document.getElementById("bg");
+  const ctx = canvas.getContext("2d");
+  let width, height, particles;
+
+  function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  }
+
+  function initParticles() {
+    particles = Array.from({ length: 70 }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: Math.random() * 2 + 1,
+      dx: (Math.random() - 0.5) * 0.5,
+      dy: (Math.random() - 0.5) * 0.5
+    }));
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    for (let p of particles) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(88,166,255,0.2)";
+      ctx.fill();
+      p.x += p.dx;
+      p.y += p.dy;
+      if (p.x < 0 || p.x > width) p.dx *= -1;
+      if (p.y < 0 || p.y > height) p.dy *= -1;
+    }
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener("resize", () => {
+    resize();
+    initParticles();
+  });
+
+  resize();
+  initParticles();
+  draw();
+</script>
 
 </body>
 </html>

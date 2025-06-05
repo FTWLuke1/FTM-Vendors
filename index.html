@@ -2,299 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>D1Goat0 | Pentesting & Gear</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D1Goat0 Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
-    /* BASIC RESET */
-    *, *::before, *::after { box-sizing: border-box; }
-    body, html {
+    /* ROOT & FONTS */
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0d0f14;
-      color: #cbd5e1;
+      box-sizing: border-box;
+    }
+    html, body {
       height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0a0f2c, #111b3e);
+      color: #fff;
       overflow-x: hidden;
     }
-    a {
-      color: #82aaff;
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-    a:hover { color: #d0e0ff; }
 
-    /* SPLASH SCREEN */
-    #splash {
+    a {
+      color: #f66;
+      text-decoration: none;
+    }
+
+    /* LOADING SCREEN */
+    #loader {
       position: fixed;
+      z-index: 1000;
       inset: 0;
-      background: linear-gradient(135deg, #0b1a2f, #162a50);
+      background: #0a0f2c;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #58a6ff;
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 2rem;
       letter-spacing: 0.15em;
-      text-transform: uppercase;
-      z-index: 9999;
-      animation: splashFadeOut 1s ease forwards;
-      animation-delay: 2.8s;
+      animation: fadeOut 1s ease 2s forwards;
     }
-    @keyframes splashFadeOut {
+
+    @keyframes fadeOut {
       to {
         opacity: 0;
         visibility: hidden;
-        pointer-events: none;
       }
     }
 
-    /* APP CONTAINER */
-    #app {
-      display: flex;
-      min-height: 100vh;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.8s ease 3s;
-    }
-    #app.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    /* SIDEBAR NAVIGATION */
-    nav.sidebar {
-      width: 260px;
-      background: #11151e;
-      padding: 2rem 1.5rem;
-      border-right: 1px solid #223344;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-    }
-    nav.sidebar h1 {
-      font-size: 1.8rem;
-      color: #58a6ff;
-      margin-bottom: 2rem;
-    }
-    nav.sidebar button {
-      display: block;
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 0.8rem;
-      color: #8ab4f8;
-      font-weight: 600;
-      text-align: left;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-      border-left: 4px solid transparent;
-      transition: all 0.3s ease;
-    }
-    nav.sidebar button:hover,
-    nav.sidebar button.active {
-      background: #2a3a5a;
-      border-left: 4px solid #58a6ff;
-      color: #d0e0ff;
-    }
-
-    /* MAIN CONTENT */
-    main.content {
-      flex: 1;
-      padding: 3rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-      padding: 2rem;
-      background: #11151e;
-      border: 1px solid #2a3b55;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #58a6ff22;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    section.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    h2 {
-      color: #58a6ff;
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-    }
-
-    /* BACK TO TOP */
-    #back-to-top {
+    /* NAVIGATION */
+    header {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #58a6ff;
-      border: none;
-      padding: 0.7rem 1rem;
-      border-radius: 30px;
-      color: #0d0f14;
-      font-weight: bold;
-      cursor: pointer;
-      display: none;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
       z-index: 999;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    header h1 {
+      color: #f66;
+      font-size: 1.6rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      color: #ddd;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* SECTIONS */
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      border-radius: 15px;
+      padding: 2rem;
+      max-width: 800px;
+      width: 90%;
+      margin: 1rem auto;
+      box-shadow: 0 0 20px #0004;
+      transition: transform 0.3s;
+    }
+    .glass-card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #f33;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
     }
 
     /* SATELLITE ICON */
-    #satellite-logo {
+    #satellite {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      bottom: 20px;
+      left: 20px;
       width: 40px;
-      height: 40px;
-      z-index: 1000;
-      cursor: pointer;
-      filter: drop-shadow(0 0 6px #58a6ff);
-      transition: transform 0.3s ease;
+      opacity: 0.8;
+      transition: transform 0.3s;
     }
-    #satellite-logo:hover {
-      transform: rotate(15deg) scale(1.05);
+    #satellite:hover {
+      transform: rotate(10deg) scale(1.1);
     }
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
-      #app {
-        flex-direction: column;
+      nav a {
+        margin: 0 0.8rem;
+        font-size: 0.9rem;
       }
-      nav.sidebar {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #223344;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      nav.sidebar h1 {
-        flex-basis: 100%;
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-      nav.sidebar button {
-        flex: 1 0 100px;
-        text-align: center;
-      }
-      main.content {
-        padding: 2rem 1rem;
+      .glass-card {
+        padding: 1.2rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Splash -->
-  <div id="splash">D1GOAT0</div>
+  <!-- Loading Screen -->
+  <div id="loader">Launching D1Goat0...</div>
 
   <!-- Satellite Logo -->
-  <img id="satellite-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Satellite_icon.svg" alt="Satellite" />
+  <img id="satellite" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Satellite_icon.svg" alt="Satellite Icon"/>
 
-  <!-- App -->
-  <div id="app">
-    <!-- Sidebar -->
-    <nav class="sidebar">
-      <h1>D1Goat0</h1>
-      <button class="active" data-section="about">About Me</button>
-      <button data-section="products">Products</button>
-      <button data-section="buy">Where to Buy</button>
-      <button data-section="projects">My Projects</button>
-      <button data-section="collabs">Collaborations</button>
+  <!-- Header -->
+  <header>
+    <h1>D1Goat0</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#buy">Buy</a>
+      <a href="#projects">Projects</a>
+      <a href="#collab">Collabs</a>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main class="content">
-      <section id="about" class="active">
-        <h2>About Me</h2>
-        <p>I’m <strong>D1Goat0</strong> — focused on ethical hacking, pentesting gear, and hardware infiltration. My work includes scripting, hardware design, and cybersecurity R&D.</p>
-        <ul>
-          <li>🔭 Building Infiltra Network</li>
-          <li>🌱 Learning C++ and HTML</li>
-          <li>👨‍💻 All projects: <a href="https://github.com/FTWLuke1/D1HackGear" target="_blank">D1HackGear Repo</a></li>
-          <li>📫 Contact: <a href="mailto:Imlukeyo@outlook.com">Imlukeyo@outlook.com</a></li>
-          <li>🎥 TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
-        </ul>
-      </section>
+  <!-- Sections -->
+  <section id="about">
+    <div class="glass-card">
+      <h2>🧠 About Me</h2>
+      <p>I’m <strong>D1Goat0</strong> — ethical hacker, builder, and creator of custom pentesting devices. I specialize in embedded scripts, STL hardware shells, and tools for network infiltration.</p>
+      <ul>
+        <li>🔭 Working on: <strong>Infiltra Network</strong></li>
+        <li>🌱 Learning: Advanced C++, HTML, Rust</li>
+        <li>🎥 TikTok: <a href="https://www.tiktok.com/@d1goat0" target="_blank">@d1goat0</a></li>
+        <li>📫 Email: <a href="mailto:Imlukeyo@outlook.com">Imlukeyo@outlook.com</a></li>
+        <li>📂 GitHub: <a href="https://github.com/FTWLuke1" target="_blank">FTWLuke1</a></li>
+      </ul>
+    </div>
+  </section>
 
-      <section id="products">
-        <h2>Buy My Products</h2>
-        <p>Explore a growing collection of STL files, firmware, and tools custom built for real-world penetration testing and research-grade hardware hacking.</p>
-        <ul>
-          <li>✔️ All device files included</li>
-          <li>📦 STL files for 3D printing cases</li>
-          <li>💾 Flashable firmware & scripts</li>
-          <li>🔧 Ready-to-deploy exploit tools</li>
-        </ul>
-      </section>
+  <section id="products">
+    <div class="glass-card">
+      <h2>🛠️ My Products</h2>
+      <p>My devices are built for real-world cybersecurity training and red team usage. Every product includes:</p>
+      <ul>
+        <li>✅ STL Files for 3D printing</li>
+        <li>✅ Pre-flashed Firmware & Payloads</li>
+        <li>✅ Scripting + Usage Instructions</li>
+        <li>✅ Real Penetration Testing Tools</li>
+      </ul>
+    </div>
+  </section>
 
-      <section id="buy">
-        <h2>Where to Buy</h2>
-        <p>Products are available through official D1Goat0 marketplaces and private sales:</p>
-        <ul>
-          <li><a href="#">Coming Soon: Infiltra Storefront</a></li>
-          <li>DM on TikTok or Discord for inquiries</li>
-        </ul>
-      </section>
+  <section id="buy">
+    <div class="glass-card">
+      <h2>🛒 Where to Buy</h2>
+      <p>All gear is sold directly or through trusted platforms. To purchase:</p>
+      <ul>
+        <li>💬 DM on TikTok or Discord (@d1goat0)</li>
+        <li>🛍️ Storefront launching soon...</li>
+      </ul>
+    </div>
+  </section>
 
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li><strong>Infiltra Network</strong> – modular toolkit for pentesting</li>
-          <li><strong>D1HackGear</strong> – STL/firmware/scripts collection</li>
-          <li><strong>StealthNode</strong> – covert WiFi access gadget</li>
-        </ul>
-      </section>
+  <section id="projects">
+    <div class="glass-card">
+      <h2>💻 Projects</h2>
+      <ul>
+        <li><strong>Infiltra Network</strong> – Modular red team toolkit</li>
+        <li><strong>D1HackGear Repo</strong> – All scripts, STL files, and firmware</li>
+        <li><strong>StealthNode</strong> – Tiny WiFi access/control implant</li>
+      </ul>
+    </div>
+  </section>
 
-      <section id="collabs">
-        <h2>Collaborations</h2>
-        <p>Open to working on PCB design, embedded C projects, and community security tools. DM me if you want to build something real.</p>
-      </section>
-    </main>
-  </div>
+  <section id="collab">
+    <div class="glass-card">
+      <h2>🤝 Collaborations</h2>
+      <p>I’m actively looking to team up with engineers and security pros on:</p>
+      <ul>
+        <li>🔌 PCB and device design</li>
+        <li>🧠 Co-building red team tools</li>
+        <li>🌐 Community research projects</li>
+      </ul>
+    </div>
+  </section>
 
-  <!-- Back to Top -->
-  <button id="back-to-top">↑ Top</button>
-
-  <!-- Script -->
-  <script>
-    // Splash and app load
-    window.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        document.getElementById("app").classList.add("active");
-      }, 3000);
-    });
-
-    // Navigation logic
-    const buttons = document.querySelectorAll("nav.sidebar button");
-    const sections = document.querySelectorAll("main.content section");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        sections.forEach(sec => {
-          sec.classList.remove("active");
-          if (sec.id === btn.dataset.section) {
-            sec.classList.add("active");
-          }
-        });
-      });
-    });
-
-    // Back to Top Button
-    const backToTop = document.getElementById("back-to-top");
-    window.addEventListener("scroll", () => {
-      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
-    });
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
 </body>
 </html>

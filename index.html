@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D1GOAT0 - Elite Tech & Security Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>D1GOAT0 - Premium Digital Services & Tools</title>
+    <meta name="description" content="D1GOAT0 offers premium digital services, tools, and solutions for modern businesses and individuals.">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">D1GOAT0</span>
-                <span class="logo-subtitle">ELITE TECH</span>
+                <div class="logo-text">D1GOAT0</div>
+                <div class="logo-subtitle">DIGITAL EXCELLENCE</div>
             </div>
             
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#products" class="nav-link">Products</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
@@ -30,14 +36,14 @@
             </ul>
             
             <div class="nav-actions">
-                <div class="search-toggle">
+                <div class="search-toggle" id="searchToggle">
                     <i class="fas fa-search"></i>
                 </div>
-                <div class="cart-icon">
+                <div class="cart-icon" id="cartIcon">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count" id="cart-count">0</span>
+                    <span class="cart-count" id="cartCount">0</span>
                 </div>
-                <div class="hamburger">
+                <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -47,85 +53,291 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="hero-background">
             <div class="floating-elements">
                 <div class="floating-cube"></div>
-                <div class="floating-sphere"></div>
-                <div class="floating-pyramid"></div>
                 <div class="floating-cube floating-cube-2"></div>
+                <div class="floating-sphere"></div>
                 <div class="floating-sphere floating-sphere-2"></div>
+                <div class="floating-pyramid"></div>
             </div>
             <div class="matrix-rain"></div>
         </div>
         
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">ELITE</span>
-                    <span class="title-line">TECH</span>
-                    <span class="title-line">SOLUTIONS</span>
-                </h1>
-                <p class="hero-description">
-                    Professional-grade cybersecurity tools, custom hardware modifications, 
-                    and cutting-edge technology solutions for security professionals and enthusiasts.
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        Explore Products
-                    </button>
-                    <button class="btn btn-secondary">
-                        <i class="fas fa-cog"></i>
-                        Custom Orders
-                    </button>
-                </div>
+            <h1 class="hero-title">
+                <span class="title-line">DIGITAL</span>
+                <span class="title-line">DOMINANCE</span>
+                <span class="title-line">DELIVERED</span>
+            </h1>
+            <p class="hero-description">
+                Unleash your potential with premium digital tools, services, and solutions designed for the modern digital warrior. Experience excellence redefined.
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Products
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-cogs"></i>
+                    View Services
+                </a>
             </div>
             
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span>
-                    <span class="stat-label">Products Delivered</span>
+                    <span class="stat-number" data-count="10000">0</span>
+                    <span class="stat-label">Happy Clients</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="150">0</span>
-                    <span class="stat-label">Custom Builds</span>
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Products</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="99">0</span>
-                    <span class="stat-label">Client Satisfaction</span>
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">24/7 Support</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99">0</span>
+                    <span class="stat-label">% Uptime</span>
                 </div>
             </div>
         </div>
         
         <div class="scroll-indicator">
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
+            <i class="fas fa-chevron-down scroll-arrow"></i>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="products-section">
+    <section class="products-section" id="products">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Products</h2>
-                <p class="section-subtitle">Professional-grade tools and custom solutions</p>
+                <h2 class="section-title">Premium Products</h2>
+                <p class="section-subtitle">Discover our cutting-edge digital solutions crafted for excellence</p>
             </div>
             
             <div class="category-filter">
-                <button class="filter-btn active" data-category="all">All Products</button>
-                <button class="filter-btn" data-category="devices">Devices</button>
-                <button class="filter-btn" data-category="tools">Tools</button>
-                <button class="filter-btn" data-category="cases">Cases</button>
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="tools">Digital Tools</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="templates">Templates</button>
+                <button class="filter-btn" data-filter="courses">Courses</button>
             </div>
             
-            <div class="products-grid" id="products-grid">
-                <!-- Products will be dynamically loaded here -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/00ff88?text=CYBER+TOOLKIT" alt="Cyber Security Toolkit">
+                        <div class="product-badge featured">Featured</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Digital Tools</div>
+                        <h3 class="product-title">Cyber Security Toolkit Pro</h3>
+                        <p class="product-description">Advanced cybersecurity tools for penetration testing and network analysis.</p>
+                        <ul class="product-features">
+                            <li>Network Vulnerability Scanner</li>
+                            <li>Password Cracking Tools</li>
+                            <li>Forensic Analysis Suite</li>
+                            <li>24/7 Premium Support</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="original-price">$199.99</span>
+                                $149.99
+                            </div>
+                            <button class="add-to-cart" data-product-id="1">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" data-category="software">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/ff6b35?text=AI+AUTOMATION" alt="AI Automation Suite">
+                        <div class="product-badge new">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Software</div>
+                        <h3 class="product-title">AI Automation Suite</h3>
+                        <p class="product-description">Intelligent automation software powered by advanced AI algorithms.</p>
+                        <ul class="product-features">
+                            <li>Smart Task Automation</li>
+                            <li>Machine Learning Integration</li>
+                            <li>Custom Workflow Builder</li>
+                            <li>Cloud-Based Processing</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">$299.99</div>
+                            <button class="add-to-cart" data-product-id="2">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" data-category="templates">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/7c4dff?text=WEB+TEMPLATES" alt="Premium Web Templates">
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Templates</div>
+                        <h3 class="product-title">Premium Web Templates Pack</h3>
+                        <p class="product-description">Professional website templates for modern businesses and portfolios.</p>
+                        <ul class="product-features">
+                            <li>50+ Responsive Templates</li>
+                            <li>HTML5 & CSS3 Ready</li>
+                            <li>Cross-Browser Compatible</li>
+                            <li>Free Updates Included</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">$89.99</div>
+                            <button class="add-to-cart" data-product-id="3">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card" data-category="courses">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/00ff88?text=HACKING+COURSE" alt="Ethical Hacking Course">
+                        <div class="product-badge">Bestseller</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Courses</div>
+                        <h3 class="product-title">Complete Ethical Hacking Course</h3>
+                        <p class="product-description">Master ethical hacking with hands-on labs and real-world scenarios.</p>
+                        <ul class="product-features">
+                            <li>40+ Hours of Content</li>
+                            <li>Hands-on Lab Exercises</li>
+                            <li>Certificate of Completion</li>
+                            <li>Lifetime Access</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="original-price">$399.99</span>
+                                $199.99
+                            </div>
+                            <button class="add-to-cart" data-product-id="4">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/ff6b35?text=DATA+RECOVERY" alt="Data Recovery Pro">
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Digital Tools</div>
+                        <h3 class="product-title">Data Recovery Pro</h3>
+                        <p class="product-description">Advanced data recovery software for deleted and corrupted files.</p>
+                        <ul class="product-features">
+                            <li>Deep Scan Technology</li>
+                            <li>Multiple File Format Support</li>
+                            <li>Preview Before Recovery</li>
+                            <li>Secure Data Wiping</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">$79.99</div>
+                            <button class="add-to-cart" data-product-id="5">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card" data-category="software">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x200/0a0a0a/7c4dff?text=VPN+MASTER" alt="VPN Master Pro">
+                        <div class="product-badge featured">Featured</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Quick View">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" title="Add to Wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Software</div>
+                        <h3 class="product-title">VPN Master Pro</h3>
+                        <p class="product-description">Ultra-secure VPN solution with military-grade encryption.</p>
+                        <ul class="product-features">
+                            <li>256-bit AES Encryption</li>
+                            <li>100+ Server Locations</li>
+                            <li>No-Log Policy</li>
+                            <li>Kill Switch Protection</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">$129.99</div>
+                            <button class="add-to-cart" data-product-id="6">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="load-more-container">
-                <button class="btn btn-outline" id="loadMoreBtn">
+                <button class="btn btn-outline" id="loadMoreProducts">
                     <i class="fas fa-plus"></i>
                     Load More Products
                 </button>
@@ -134,99 +346,210 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section class="services-section" id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive solutions for your security needs</p>
+                <h2 class="section-title">Professional Services</h2>
+                <p class="section-subtitle">Expert solutions tailored to your digital needs</p>
             </div>
             
             <div class="services-grid">
-                <div class="service-card">
+                <!-- Service Card 1 -->
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
                     <div class="service-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Penetration Testing</h3>
-                    <p>Professional security assessments and vulnerability analysis for your infrastructure.</p>
+                    <h3>Cybersecurity Consulting</h3>
+                    <p>Comprehensive security audits and penetration testing to protect your digital assets from threats.</p>
                     <ul class="service-features">
-                        <li>Network Security Testing</li>
-                        <li>Web Application Testing</li>
-                        <li>Wireless Security Audit</li>
-                        <li>Social Engineering Tests</li>
+                        <li>Security Assessment & Audit</li>
+                        <li>Vulnerability Testing</li>
+                        <li>Incident Response Planning</li>
+                        <li>Compliance Consulting</li>
+                        <li>24/7 Monitoring Setup</li>
                     </ul>
-                    <button class="btn btn-outline">Learn More</button>
-                </div>
-                
-                <div class="service-card featured">
-                    <div class="service-badge">Popular</div>
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$499/month</span>
                     </div>
-                    <h3>Custom Hardware</h3>
-                    <p>Bespoke hardware modifications and custom device development for specialized needs.</p>
-                    <ul class="service-features">
-                        <li>3D Printed Cases</li>
-                        <li>Device Modifications</li>
-                        <li>Custom PCB Design</li>
-                        <li>Firmware Development</li>
-                    </ul>
-                    <button class="btn btn-primary">Get Quote</button>
+                    <button class="btn btn-primary service-btn" data-service="cybersecurity">
+                        <i class="fas fa-arrow-right"></i>
+                        Get Started
+                    </button>
                 </div>
-                
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>Bespoke software solutions built with cutting-edge technologies to meet your specific requirements.</p>
+                    <ul class="service-features">
+                        <li>Full-Stack Development</li>
+                        <li>Mobile App Development</li>
+                        <li>API Integration</li>
+                        <li>Database Design</li>
+                        <li>Quality Assurance Testing</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$2,999</span>
+                    </div>
+                    <button class="btn btn-primary service-btn" data-service="development">
+                        <i class="fas fa-arrow-right"></i>
+                        Get Quote
+                    </button>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Automation Solutions</h3>
+                    <p>Intelligent automation systems powered by machine learning to streamline your business processes.</p>
+                    <ul class="service-features">
+                        <li>Process Automation</li>
+                        <li>Chatbot Development</li>
+                        <li>Data Analysis & Insights</li>
+                        <li>Machine Learning Models</li>
+                        <li>Integration & Deployment</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$1,999</span>
+                    </div>
+                    <button class="btn btn-primary service-btn" data-service="ai-automation">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Scalable cloud solutions with enterprise-grade security and 99.9% uptime guarantee.</p>
+                    <ul class="service-features">
+                        <li>Cloud Migration</li>
+                        <li>Infrastructure Setup</li>
+                        <li>Load Balancing</li>
+                        <li>Backup & Recovery</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$299/month</span>
+                    </div>
+                    <button class="btn btn-primary service-btn" data-service="cloud">
+                        <i class="fas fa-arrow-right"></i>
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Service Card 5 -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Training & Consulting</h3>
-                    <p>Expert training sessions and consulting services for cybersecurity professionals.</p>
+                    <h3>Training & Certification</h3>
+                    <p>Professional training programs to upskill your team with the latest technologies and best practices.</p>
                     <ul class="service-features">
-                        <li>Security Awareness Training</li>
-                        <li>Technical Workshops</li>
-                        <li>Compliance Consulting</li>
-                        <li>Incident Response Planning</li>
+                        <li>Customized Training Programs</li>
+                        <li>Hands-on Workshops</li>
+                        <li>Industry Certifications</li>
+                        <li>Online & On-site Options</li>
+                        <li>Progress Tracking</li>
                     </ul>
-                    <button class="btn btn-outline">Contact Us</button>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$199/person</span>
+                    </div>
+                    <button class="btn btn-primary service-btn" data-service="training">
+                        <i class="fas fa-arrow-right"></i>
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Technical Support</h3>
+                    <p>Round-the-clock technical support with guaranteed response times and expert assistance.</p>
+                    <ul class="service-features">
+                        <li>24/7 Live Support</li>
+                        <li>Remote Assistance</li>
+                        <li>Priority Ticket System</li>
+                        <li>Knowledge Base Access</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Starting at</span>
+                        <span class="price-amount">$99/month</span>
+                    </div>
+                    <button class="btn btn-primary service-btn" data-service="support">
+                        <i class="fas fa-arrow-right"></i>
+                        Subscribe
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="section-title">About D1GOAT0</h2>
                     <p class="about-description">
-                        Founded by cybersecurity professionals, D1GOAT0 specializes in providing 
-                        elite-grade security tools and custom hardware solutions. Our mission is to 
-                        empower security researchers, penetration testers, and technology enthusiasts 
-                        with cutting-edge tools and knowledge.
+                        We are digital pioneers, pushing the boundaries of technology to deliver exceptional solutions. 
+                        With years of experience in cybersecurity, software development, and digital innovation, 
+                        we've established ourselves as the go-to source for premium digital services.
+                    </p>
+                    <p class="about-description">
+                        Our mission is to empower individuals and businesses with cutting-edge tools and expertise 
+                        that drive success in the digital age. Every product and service we offer is crafted with 
+                        precision, tested rigorously, and backed by our commitment to excellence.
                     </p>
                     
                     <div class="about-features">
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Professional Grade Equipment</span>
+                            <span>Industry-leading expertise with 10+ years experience</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Custom Solutions Available</span>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Military-grade security in all our solutions</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expert Technical Support</span>
+                            <i class="fas fa-rocket"></i>
+                            <span>Cutting-edge technology and innovation</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Secure & Discreet Shipping</span>
+                            <i class="fas fa-users"></i>
+                            <span>10,000+ satisfied customers worldwide</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 premium support and assistance</span>
                         </div>
                     </div>
                     
-                    <div class="about-cta">
-                        <button class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            Get In Touch
+                    <div class="about-buttons">
+                        <button class="btn btn-primary" id="learnMoreBtn">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                        <button class="btn btn-outline" id="downloadBrochure">
+                            <i class="fas fa-download"></i>
+                            Download Brochure
                         </button>
                     </div>
                 </div>
@@ -234,20 +557,20 @@
                 <div class="about-visual">
                     <div class="tech-showcase">
                         <div class="tech-item">
-                            <i class="fas fa-microchip"></i>
-                            <span>Hardware</span>
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                         <div class="tech-item">
-                            <i class="fas fa-code"></i>
-                            <span>Software</span>
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
                         </div>
                         <div class="tech-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>Networking</span>
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
                         </div>
                         <div class="tech-item">
-                            <i class="fas fa-lock"></i>
-                            <span>Security</span>
+                            <i class="fab fa-aws"></i>
+                            <span>Cloud</span>
                         </div>
                     </div>
                 </div>
@@ -256,11 +579,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to discuss your project? Let's connect.</p>
+                <p class="section-subtitle">Ready to elevate your digital presence? Let's discuss your project</p>
             </div>
             
             <div class="contact-content">
@@ -270,18 +593,31 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Email</h4>
+                            <h4>Email Us</h4>
                             <p>contact@d1goat0.com</p>
+                            <p>support@d1goat0.com</p>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-comments"></i>
+                            <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Discord</h4>
-                            <p>D1GOAT0#1337</p>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>123 Digital Street</p>
+                            <p>Tech City, TC 12345</p>
                         </div>
                     </div>
                     
@@ -290,47 +626,82 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Response Time</h4>
-                            <p>24-48 hours</p>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            <p>24/7 Emergency Support</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="product-inquiry">Product Inquiry</option>
-                                <option value="custom-order">Custom Order</option>
-                                <option value="technical-support">Technical Support</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="cybersecurity">Cybersecurity Consulting</option>
+                            <option value="development">Custom Development</option>
+                            <option value="ai-automation">AI & Automation</option>
+                            <option value="cloud">Cloud Infrastructure</option>
+                            <option value="training">Training & Certification</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Project Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-1k">Under $1,000</option>
+                            <option value="1k-5k">$1,000 - $5,000</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k-25k">$10,000 - $25,000</option>
+                            <option value="25k-50k">$25,000 - $50,000</option>
+                            <option value="50k-plus">$50,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements, goals, and timeline..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for updates and exclusive offers
+                        </label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -341,70 +712,94 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <span class="logo-text">D1GOAT0</span>
-                        <span class="logo-subtitle">ELITE TECH</span>
+                        <div class="logo-text">D1GOAT0</div>
+                        <div class="logo-subtitle">DIGITAL EXCELLENCE</div>
                     </div>
                     <p class="footer-description">
-                        Professional cybersecurity tools and custom hardware solutions 
-                        for security professionals worldwide.
+                        Leading the digital revolution with premium tools, services, and solutions. 
+                        Your success is our mission.
                     </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" id="blogLink">Blog</a></li>
+                        <li><a href="#" id="careersLink">Careers</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Categories</h4>
+                    <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#" data-category="devices">Security Devices</a></li>
-                        <li><a href="#" data-category="tools">Penetration Tools</a></li>
-                        <li><a href="#" data-category="cases">Custom Cases</a></li>
-                        <li><a href="#">Training Materials</a></li>
+                        <li><a href="#" data-service="cybersecurity">Cybersecurity</a></li>
+                        <li><a href="#" data-service="development">Development</a></li>
+                        <li><a href="#" data-service="ai-automation">AI & Automation</a></li>
+                        <li><a href="#" data-service="cloud">Cloud Solutions</a></li>
+                        <li><a href="#" data-service="training">Training</a></li>
+                        <li><a href="#" data-service="support">Support</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                    </div>
-                    <div class="newsletter">
-                        <h5>Stay Updated</h5>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Enter your email">
-                            <button type="submit">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" id="helpCenter">Help Center</a></li>
+                        <li><a href="#" id="documentation">Documentation</a></li>
+                        <li><a href="#" id="apiDocs">API Docs</a></li>
+                        <li><a href="#" id="systemStatus">System Status</a></li>
+                        <li><a href="#" id="ticketSupport">Submit Ticket</a></li>
+                        <li><a href="#" id="liveChat">Live Chat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest products and exclusive offers.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <p>&copy; 2024 D1GOAT0. All rights reserved.</p>
+                    <div class="copyright">
+                        <p>&copy; 2024 D1GOAT0. All rights reserved.</p>
+                    </div>
                     <div class="footer-bottom-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Shipping Info</a>
+                        <a href="#" id="privacyPolicy">Privacy Policy</a>
+                        <a href="#" id="termsOfService">Terms of Service</a>
+                        <a href="#" id="cookiePolicy">Cookie Policy</a>
+                        <a href="#" id="sitemap">Sitemap</a>
                     </div>
                 </div>
             </div>
@@ -414,14 +809,14 @@
     <!-- Search Overlay -->
     <div class="search-overlay" id="searchOverlay">
         <div class="search-container">
+            <div class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </div>
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search products...">
-                <button class="search-btn">
+                <input type="text" placeholder="Search products, services, or documentation..." id="searchInput">
+                <button class="search-btn" id="searchBtn">
                     <i class="fas fa-search"></i>
                 </button>
-            </div>
-            <div class="search-close">
-                <i class="fas fa-times"></i>
             </div>
         </div>
         <div class="search-results" id="searchResults">
@@ -429,9 +824,215 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Shopping Cart</h3>
+                <button class="modal-close" id="cartModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be populated here -->
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total: $<span id="cartTotal">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="continueShopping">Continue Shopping</button>
+                <button class="btn btn-primary" id="checkoutBtn">
+                    <i class="fas fa-credit-card"></i>
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="quickViewTitle">Product Details</h3>
+                <button class="modal-close" id="quickViewClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="quickViewBody">
+                <!-- Product details will be populated here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="closeQuickView">Close</button>
+                <button class="btn btn-primary" id="addToCartFromQuickView">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="serviceModalTitle">Service Details</h3>
+                <button class="modal-close" id="serviceModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="serviceModalBody">
+                <!-- Service details will be populated here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="closeServiceModal">Close</button>
+                <button class="btn btn-primary" id="requestQuote">
+                    <i class="fas fa-envelope"></i>
+                    Request Quote
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-icon" id="toastIcon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-message" id="toastMessage">
+                Success message here
+            </div>
+            <button class="toast-close" id="toastClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="products.js"></script>
+
+    <!-- Additional Scripts -->
+    <script>
+        // Initialize the website
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all components
+            initializeNavigation();
+            initializeHero();
+            initializeProducts();
+            initializeServices();
+            initializeContact();
+            initializeSearch();
+            initializeCart();
+            initializeModals();
+            initializeScrollEffects();
+            
+            // Show success message
+            showToast('Website loaded successfully!', 'success');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading states to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (!this.classList.contains('loading')) {
+                    this.classList.add('loading');
+                    setTimeout(() => {
+                        this.classList.remove('loading');
+                    }, 2000);
+                }
+            });
+        });
+
+        // Initialize counter animations
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 16);
+            });
+        }
+
+        // Trigger counter animation when hero section is visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const heroSection = document.querySelector('.hero');
+        if (heroSection) {
+            heroObserver.observe(heroSection);
+        }
+
+        // Add scroll reveal animations
+        const revealElements = document.querySelectorAll('.product-card, .service-card, .contact-item');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            revealObserver.observe(el);
+        });
+    </script>
 </body>
 </html>

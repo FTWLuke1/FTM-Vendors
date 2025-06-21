@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D1GOAT - Advanced Cybersecurity Solutions</title>
+    <meta name="description" content="Professional cybersecurity hardware, penetration testing tools, and security services. Your trusted partner in digital security.">
+    <meta name="keywords" content="cybersecurity, penetration testing, security hardware, WiFi Pineapple, USB Rubber Ducky, security audit, ethical hacking">
+    <meta name="author" content="D1GOAT">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="D1GOAT - Advanced Cybersecurity Solutions">
+    <meta property="og:description" content="Professional cybersecurity hardware and services for security professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://d1goat.com">
+    <meta property="og:image" content="https://d1goat.com/assets/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="D1GOAT - Advanced Cybersecurity Solutions">
+    <meta name="twitter:description" content="Professional cybersecurity hardware and services for security professionals.">
+    <meta name="twitter:image" content="https://d1goat.com/assets/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/advanced-styles.css">
+    <link rel="stylesheet" href="css/background-effects.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "D1GOAT",
+        "description": "Advanced cybersecurity solutions and penetration testing services",
+        "url": "https://d1goat.com",
+        "logo": "https://d1goat.com/assets/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-CYBER-SEC",
+            "contactType": "customer service",
+            "availableLanguage": "English"
+        },
+        "sameAs": [
+            "https://twitter.com/d1goat",
+            "https://linkedin.com/company/d1goat",
+            "https://github.com/d1goat"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Background Effects Container -->
+    <div id="cyber-background" class="cyber-background" aria-hidden="true"></div>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#hero" class="logo" aria-label="D1GOAT Home">
+                        <span class="logo-icon">🐐</span>
+                        <span class="logo-text">D1GOAT</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#hero" class="nav-link" data-section="hero">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#services" class="nav-link" data-section="services">Services</a>
+                    <a href="#products" class="nav-link" data-section="products">Products</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Open search" title="Search (Ctrl+K)">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                    <div class="cart-container">
+                        <button class="cart-btn" aria-label="Shopping cart" title="View cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" aria-label="Items in cart">0</span>
+                        </button>
+                        
+                        <div class="cart-dropdown" role="dialog" aria-label="Shopping cart">
+                            <div class="cart-header">Shopping Cart</div>
+                            <div class="cart-items" role="list"></div>
+                            <div class="cart-footer">
+                                <div class="cart-total">Total: $0.00</div>
+                                <button class="checkout-btn">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero fade-in" role="banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Advanced <span class="highlight">Cybersecurity</span> Solutions
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional-grade security hardware, penetration testing services, and cybersecurity training for the modern digital landscape.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" data-section="products">
+                            <i class="fas fa-shield-alt"></i>
+                            Explore Products
+                        </button>
+                        <button class="btn btn-secondary" data-section="services">
+                            <i class="fas fa-cogs"></i>
+                            Our Services
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Security Assessments</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="1000">0</div>
+                        <div class="stat-label">Vulnerabilities Found</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Enterprise Clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about slide-in-left" role="region" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About D1GOAT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            D1GOAT is a leading provider of cybersecurity solutions, specializing in advanced penetration testing tools, security hardware, and comprehensive security services.
+                        </p>
+                        <p>
+                            Our team of certified security professionals brings years of experience in ethical hacking, vulnerability assessment, and security consulting. We're committed to helping organizations strengthen their security posture through cutting-edge tools and expert guidance.
+                        </p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">🛡️</div>
+                                <h3>Expert Team</h3>
+                                <p>Certified security professionals with extensive field experience</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🔧</div>
+                                <h3>Quality Tools</h3>
+                                <p>Professional-grade hardware and software solutions</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📚</div>
+                                <h3>Training</h3>
+                                <p>Comprehensive cybersecurity education programs</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🤝</div>
+                                <h3>Support</h3>
+                                <p>24/7 technical support and consultation services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services scale-in" role="region" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">Our Services</h2>
+                <div class="services-grid" role="list">
+                    <div class="service-card" role="listitem" tabindex="0">
+                        <div class="service-icon">🔍</div>
+                        <h3>Penetration Testing</h3>
+                        <p>Comprehensive security assessments to identify vulnerabilities in your infrastructure, applications, and networks.</p>
+                        <ul class="service-features">
+                            <li>Network penetration testing</li>
+                            <li>Web application security testing</li>
+                            <li>Wireless security assessment</li>
+                            <li>Social engineering testing</li>
+                        </ul>
+                        <div class="service-price">Starting at $2,500</div>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                    
+                    <div class="service-card" role="listitem" tabindex="0">
+                        <div class="service-icon">📋</div>
+                        <h3>Security Audit</h3>
+                        <p>Detailed security reviews and compliance assessments to ensure your organization meets industry standards.</p>
+                        <ul class="service-features">
+                            <li>Compliance auditing (SOC 2, ISO 27001)</li>
+                            <li>Security policy review</li>
+                            <li>Risk assessment</li>
+                            <li>Remediation planning</li>
+                        </ul>
+                        <div class="service-price">Starting at $1,500</div>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                    
+                    <div class="service-card" role="listitem" tabindex="0">
+                        <div class="service-icon">🎓</div>
+                        <h3>Security Training</h3>
+                        <p>Hands-on cybersecurity training programs for individuals and organizations to build security awareness.</p>
+                        <ul class="service-features">
+                            <li>Ethical hacking workshops</li>
+                            <li>Security awareness training</li>
+                            <li>Incident response training</li>
+                            <li>Custom training programs</li>
+                        </ul>
+                        <div class="service-price">Starting at $500</div>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                    
+                    <div class="service-card" role="listitem" tabindex="0">
+                        <div class="service-icon">💼</div>
+                        <h3>Security Consulting</h3>
+                        <p>Expert guidance on security strategy, architecture design, and implementation of security controls.</p>
+                        <ul class="service-features">
+                            <li>Security architecture review</li>
+                            <li>Incident response planning</li>
+                            <li>Security program development</li>
+                            <li>Ongoing security advisory</li>
+                        </ul>
+                        <div class="service-price">Starting at $200/hour</div>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section products slide-in-right" role="region" aria-labelledby="products-title">
+            <div class="container">
+                <h2 id="products-title" class="section-title">Security Hardware</h2>
+                <div class="products-grid" role="list">
+                    <div class="product-card" role="listitem" data-product-id="wifi-pineapple" tabindex="0">
+                        <div class="product-image">📡</div>
+                        <h3 class="product-title">WiFi Pineapple</h3>
+                        <p class="product-description">Advanced wireless auditing platform for penetration testing and security research.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">802.11 a/b/g/n/ac</span>
+                            <span class="spec-tag">Dual Band</span>
+                            <span class="spec-tag">OpenWrt</span>
+                        </div>
+                        <div class="product-price">$199</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add WiFi Pineapple to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" role="listitem" data-product-id="rubber-ducky" tabindex="0">
+                        <div class="product-image">🦆</div>
+                        <h3 class="product-title">USB Rubber Ducky</h3>
+                        <p class="product-description">Keystroke injection tool that appears as a USB flash drive to target computers.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">USB HID</span>
+                            <span class="spec-tag">DuckyScript</span>
+                            <span class="spec-tag">Cross-platform</span>
+                        </div>
+                        <div class="product-price">$79</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add USB Rubber Ducky to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" role="listitem" data-product-id="lan-turtle" tabindex="0">
+                        <div class="product-image">🐢</div>
+                        <h3 class="product-title">LAN Turtle</h3>
+                        <p class="product-description">Covert network access and man-in-the-middle platform for network penetration testing.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">Ethernet</span>
+                            <span class="spec-tag">OpenWrt</span>
+                            <span class="spec-tag">SSH Access</span>
+                        </div>
+                        <div class="product-price">$59</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add LAN Turtle to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" role="listitem" data-product-id="hackrf-one" tabindex="0">
+                        <div class="product-image">📻</div>
+                        <h3 class="product-title">HackRF One</h3>
+                        <p class="product-description">Software defined radio platform for RF analysis and signal intelligence.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">1MHz-6GHz</span>
+                            <span class="spec-tag">Half-duplex</span>
+                            <span class="spec-tag">GNU Radio</span>
+                        </div>
+                        <div class="product-price">$299</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add HackRF One to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" role="listitem" data-product-id="proxmark3" tabindex="0">
+                        <div class="product-image">💳</div>
+                        <h3 class="product-title">Proxmark3</h3>
+                        <p class="product-description">Advanced RFID/NFC research tool for proximity card security testing.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">125kHz/13.56MHz</span>
+                            <span class="spec-tag">RFID/NFC</span>
+                            <span class="spec-tag">Cloning</span>
+                        </div>
+                        <div class="product-price">$249</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add Proxmark3 to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" role="listitem" data-product-id="chipwhisperer" tabindex="0">
+                        <div class="product-image">🔬</div>
+                        <h3 class="product-title">ChipWhisperer</h3>
+                        <p class="product-description">Side-channel analysis tool for hardware security research and cryptographic attacks.</p>
+                        <div class="product-specs">
+                            <span class="spec-tag">Power Analysis</span>
+                            <span class="spec-tag">Glitching</span>
+                            <span class="spec-tag">Python API</span>
+                        </div>
+                        <div class="product-price">$399</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" aria-label="Add ChipWhisperer to cart">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="add-to-favorites" aria-label="Add to favorites">🤍</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-footer">
+                    <p class="disclaimer">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        All products are intended for authorized security testing and educational purposes only. 
+                        Users are responsible for compliance with applicable laws and regulations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact fade-in" role="region" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@d1goat.com">info@d1goat.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+15559999999">+1 (555) 999-9999</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <address>
+                                    123 Cyber Street<br>
+                                    Security City, SC 12345<br>
+                                    United States
+                                </address>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                                   Emergency Support: 24/7</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="https://twitter.com/d1goat" aria-label="Follow us on Twitter" target="_blank" rel="noopener">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/d1goat" aria-label="Connect on LinkedIn" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/d1goat" aria-label="View our GitHub" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://youtube.com/d1goat" aria-label="Subscribe to our YouTube channel" target="_blank" rel="noopener">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" role="form" aria-label="Contact form">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-describedby="name-error">
+                            <span class="error-message" id="name-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                            <span class="error-message" id="email-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required aria-describedby="subject-error">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="services">Services Information</option>
+                                <option value="products">Product Support</option>
+                                <option value="training">Training Programs</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="support">Technical Support</option>
+                            </select>
+                            <span class="error-message" id="subject-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Please provide details about your inquiry..."></textarea>
+                            <span class="error-message" id="message-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for security updates and product announcements
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#privacy-policy" target="_blank">Privacy Policy</a> and <a href="#terms" target="_blank">Terms of Service</a> *
+                            </label>
+                            <span class="error-message" id="privacy-error" role="alert"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>D1GOAT</h4>
+                    <p>Advanced cybersecurity solutions for the modern digital landscape. Protecting organizations through expert security services and cutting-edge tools.</p>
+                    <div class="footer-social">
+                        <a href="https://twitter.com/d1goat" aria-label="Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/d1goat" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/d1goat" aria-label="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Penetration Testing</a></li>
+                        <li><a href="#services">Security Audits</a></li>
+                        <li><a href="#services">Security Training</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">WiFi Pineapple</a></li>
+                        <li><a href="#products">USB Rubber Ducky</a></li>
+                        <li><a href="#products">HackRF One</a></li>
+                        <li><a href="#products">Proxmark3</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#support">Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#responsible-disclosure">Responsible Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 D1GOAT. All rights reserved.</p>
+                </div>
+                <div class="footer-actions">
+                    <button onclick="advancedFeatures.exportUserData()" class="footer-link">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                    <button onclick="advancedFeatures.clearAllData()" class="footer-link">
+                        <i class="fas fa-trash"></i> Clear Data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay" role="dialog" aria-label="Search" aria-hidden="true">
+        <div class="search-container">
+            <div class="search-header">
+                <h3>Search D1GOAT</h3>
+                <button class="search-close" aria-label="Close search">&times;</button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Search products, services, or content..." aria-label="Search input">
+            </div>
+            <div class="search-results" id="searchResults" role="listbox" aria-label="Search results">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat System -->
+    <button class="chat-toggle" id="chatToggle" aria-label="Open chat support" title="Chat with us">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <div class="chat-window" id="chatWindow" role="dialog" aria-label="Chat support" aria-hidden="true">
+        <div class="chat-header">
+            <h4>D1GOAT Support</h4>
+            <button class="chat-minimize" id="chatMinimize" aria-label="Minimize chat">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Chat messages">
+            <div class="chat-message bot">
+                👋 Hello! I'm here to help you with any questions about our cybersecurity products and services. How can I assist you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message..." aria-label="Chat message input">
+            <button class="chat-send" id="chatSend" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications">
+        <!-- Toast notifications will be inserted here -->
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading-indicator" id="loadingIndicator" aria-hidden="true">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/advanced.js"></script>
+    <script src="js/background-effects.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+
+    <!-- Analytics (Replace with your actual analytics code) -->
+    <script>
+        // Google Analytics or other analytics code would go here
+        // Example:
+        // gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>

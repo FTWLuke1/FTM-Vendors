@@ -316,6 +316,94 @@ body {
     font-weight: 500;
 }
 
+/* Additional CSS for updated products */
+
+/* Price range styling */
+.price-range {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--success-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.price-range .from {
+    font-size: 1.4rem;
+}
+
+/* Special styling for 3D model products */
+.product-card .fa-cube {
+    background: linear-gradient(45deg, var(--primary-blue), var(--primary-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced product tags */
+.tag.new {
+    background: linear-gradient(45deg, var(--success-color), #059669);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+.tag.popular {
+    background: linear-gradient(45deg, var(--warning-color), #d97706);
+    color: white;
+}
+
+.tag.premium {
+    background: linear-gradient(45deg, var(--primary-purple), #7c3aed);
+    color: white;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Product card hover effects for different categories */
+.product-card:hover .fa-cube {
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .fa-wifi {
+    animation: wifi-pulse 1s ease-in-out;
+}
+
+.product-card:hover .fa-shield-alt {
+    animation: shield-glow 1s ease-in-out;
+}
+
+@keyframes wifi-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+@keyframes shield-glow {
+    0%, 100% { filter: drop-shadow(0 0 5px var(--primary-blue)); }
+    50% { filter: drop-shadow(0 0 15px var(--primary-blue)); }
+}
+
+/* Responsive pricing */
+@media (max-width: 480px) {
+    .price {
+        font-size: 1.5rem;
+    }
+    
+    .price-range {
+        font-size: 1.4rem;
+    }
+    
+    .price-range .from {
+        font-size: 1.2rem;
+    }
+}
+
 /* Services Section */
 .services {
     padding: 80px 0;

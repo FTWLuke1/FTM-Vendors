@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Kit - STL Files Collection - D1 Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>D1 Store</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="index.html#products">Products</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">3D Model Kit</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="images/stl-pack-main.jpg" alt="3D Model Kit Collection" id="mainImage">
+                        <div class="image-zoom-indicator">
+                            <i class="fas fa-search-plus"></i>
+                            Click to zoom
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/stl-pack-main.jpg" alt="STL Collection Overview" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="images/stl-sample-1.jpg" alt="Sample STL Model 1" class="thumbnail" onclick="changeImage(this)">
+                        <img src="images/stl-sample-2.jpg" alt="Sample STL Model 2" class="thumbnail" onclick="changeImage(this)">
+                        <img src="images/stl-sample-3.jpg" alt="Sample STL Model 3" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1>3D Model Kit - Complete STL Collection</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(47 reviews)</span>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">$5.00</span>
+                    </div>
+
+                    <div class="stock-status in-stock">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Digital Download - Instant Access</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Complete collection of all my custom project STL files. Perfect for 3D printing enthusiasts and makers who want professional-grade cases and enclosures for their electronics projects.</p>
+                    </div>
+
+                    <div class="product-features">
+                        <h3>What's Included</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Complete ZIP file with all STL models</li>
+                            <li><i class="fas fa-check"></i> Custom cases for popular devices</li>
+                            <li><i class="fas fa-check"></i> Electronic project enclosures</li>
+                            <li><i class="fas fa-check"></i> Tool holders and organizers</li>
+                            <li><i class="fas fa-check"></i> Print-ready files (no supports needed)</li>
+                            <li><i class="fas fa-check"></i> Basic print settings guide</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-icons">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                            <span>Instant Download</span>
+                        </div>
+                        <div class="feature-icon">
+                            <i class="fas fa-cube"></i>
+                            <span>Print Ready</span>
+                        </div>
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                            <span>No Supports</span>
+                        </div>
+                        <div class="feature-icon">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ZIP Package</span>
+                        </div>
+                    </div>
+
+                    <div class="product-specs">
+                        <h3>Package Details</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">File Format</span>
+                                <span class="spec-value">STL Files in ZIP</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Package Size</span>
+                                <span class="spec-value">~150MB ZIP Archive</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Print Resolution</span>
+                                <span class="spec-value">0.2mm Layer Height</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Material</span>
+                                <span class="spec-value">PLA/PETG Recommended</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Printer Type</span>
+                                <span class="spec-value">FDM/FFF Compatible</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">License</span>
+                                <span class="spec-value">Personal Use Only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info">
+                        <div class="shipping-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <strong>Instant Download</strong>
+                                <p>Get your files immediately after purchase</p>
+                            </div>
+                        </div>
+                        <div class="shipping-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Delivery</strong>
+                                <p>Download link sent to your email</p>
+                            </div>
+                        </div>
+                        <div class="shipping-item">
+                            <i class="fas fa-infinity"></i>
+                            <div>
+                                <strong>Unlimited Prints</strong>
+                                <p>Print as many as you need for personal use</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-large" onclick="purchaseSTLPack()">
+                                <i class="fas fa-download"></i>
+                                Buy & Download - $5.00
+                            </button>
+                            <button class="btn btn-secondary btn-large" onclick="contactForPurchase()">
+                                <i class="fas fa-envelope"></i>
+                                Contact for Purchase
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="showTab('description')">Description</button>
+                <button class="tab-btn" onclick="showTab('print-guide')">Print Guide</button>
+                <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+            </div>
+
+            <div id="description" class="tab-content active">
+                <h3>Complete 3D Model Collection</h3>
+                <p>This STL pack contains all the custom 3D models I've designed and featured in my projects. Each model has been carefully tested to ensure perfect prints every time.</p>
+                
+                <h4>What You'll Get</h4>
+                <p>One convenient ZIP file containing all my STL files, including:</p>
+                <ul>
+                    <li>Custom cases for ESP32, Arduino, and other development boards</li>
+                    <li>Enclosures for electronic projects and sensors</li>
+                    <li>Tool holders and workshop organizers</li>
+                    <li>Mounting brackets and accessories</li>
+                    <li>Specialized cases for hacking tools and devices</li>
+                </ul>
+
+                <h4>Print Settings</h4>
+                <p>All models are optimized for easy printing with these recommended settings:</p>
+                <ul>
+                    <li><strong>Layer Height:</strong> 0.2mm</li>
+                    <li><strong>Infill:</strong> 20-25%</li>
+                    <li><strong>Print Speed:</strong> 50mm/s</li>
+                    <li><strong>Supports:</strong> Not required (optimized design)</li>
+                    <li><strong>Material:</strong> PLA or PETG recommended</li>
+                </ul>
+
+                <div class="warning-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Personal Use License:</strong> These files are for personal use only. Commercial use or resale of printed items is not permitted without separate licensing.
+                    </div>
+                </div>
+            </div>
+
+            <div id="print-guide" class="tab-content">
+                <h3>3D Printing Guide</h3>
+                
+                <h4>Recommended Printer Settings</h4>
+                <div class="print-settings">
+                    <div class="setting-group">
+                        <h5>Basic Settings</h5>
+                        <ul>
+                            <li><strong>Layer Height:</strong> 0.2mm (0.15mm for fine details)</li>
+                            <li><strong>Infill Density:</strong> 20-25%</li>
+                            <li><strong>Print Speed:</strong> 50mm/s</li>
+                            <li><strong>Wall Thickness:</strong> 1.2mm (3 perimeters)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <h5>Temperature Settings (PLA)</h5>
+                        <ul>
+                            <li><strong>Nozzle Temperature:</strong> 200-210°C</li>
+                            <li><strong>Bed Temperature:</strong> 60°C</li>
+                            <li><strong>First Layer:</strong> 210°C nozzle, 65°C bed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>Material Recommendations</h4>
+                <div class="material-guide">
+                    <div class="material-item">
+                        <h5>PLA (Recommended)</h5>
+                        <p>Easy to print, good for most cases and enclosures. Perfect for beginners.</p>
+                    </div>
+                    <div class="material-item">
+                        <h5>PETG</h5>
+                        <p>More durable than PLA, chemical resistant. Great for tool holders.</p>
+                    </div>
+                    <div class="material-item">
+                        <h5>ABS</h5>
+                        <p>Heat resistant, strong. Good for automotive or high-temp applications.</p>
+                    </div>
+                </div>
+
+                <h4>Post-Processing Tips</h4>
+                <ul>
+                    <li>Light sanding may be needed for perfect fit</li>
+                    <li>Use a drill to clean out screw holes if needed</li>
+                    <li>Test fit before final assembly</li>
+                    <li>Consider acetone vapor smoothing for ABS prints</li>
+                </ul>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <h3>Customer Reviews</h3>
+                
+                <div class="reviews-summary">
+                    <div class="rating-overview">
+                        <div class="average-rating">
+                            <div class="rating-number">4.9</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="total-reviews">Based on 47 reviews</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div>
+                                <div class="reviewer-name">TechMaker_2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-date">2 weeks ago</div>
+                        </div>
+                        <div class="review-content">
+                            <p>Excellent collection of STL files! Everything printed perfectly on my Ender 3. The cases fit my ESP32 boards perfectly and look very professional. Great value for $5!</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div>
+                                <div class="reviewer-name">PrinterPro_Mike</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-date">1 month ago</div>
+                        </div>
+                        <div class="review-content">
+                            <p>Really well-designed models. No supports needed and they all printed flawlessly. The tool organizers are particularly useful for my workbench. Highly recommended!</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div>
+                                <div class="reviewer-name">ElectronicsHobbyist</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-date">1 month ago</div>
+                        </div>
+                        <div class="review-content">
+                            <p>Perfect for organizing my electronics projects. The Arduino and ESP32 cases are exactly what I needed. Download was instant and all files are well organized.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div>
+                                <div class="reviewer-name">MakerSpace_Dave</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-date">2 months ago</div>
+                        </div>
+                        <div class="review-content">
+                            <p>Good collection overall. Most models printed great, though I had to scale one case slightly for my specific board variant. Still great value and saves tons of design time.</p>
+                        </div>
+                    </div>
+
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div>
+                                <div class="reviewer-name">3DPrintNewbie</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-date">2 months ago</div>
+                        </div>
+                        <div class="review-content">
+                            <p>As someone new to 3D printing, these files were perfect. No supports needed and clear instructions. My first successful prints! Thank you for making quality files.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You Might Also Like</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>3D Printing Service</h3>
+                    <div class="price">$10-$30</div>
+                    <p>Don't have a 3D printer? I'll print these STL files for you with high-quality results.</p>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-info-circle"></i>
+                        Order Print
+                    </a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>5GHz Deauther Kit Pro</h3>
+                    <div class="price">$30</div>
+                    <p>Professional WiFi deauthentication tool. Perfect case included in STL pack!</p>
+                    <a href="product-deauther.html" class="btn btn-primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now
+                    </a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Custom PCB Design</h3>
+                    <div class="price">Starting at $10</div>
+                    <p>Need a custom PCB? I'll design it and include a matching 3D printed case.</p>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-drafting-compass"></i>
+                        Get Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>D1 Store</span>
+                    </div>
+                    <p>Your trusted partner in cybersecurity solutions and custom development. Professional-grade tools and services for security professionals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="product-deauther.html">5GHz Deauther Kit Pro</a></li>
+                        <li><a href="#products">Custom Code Development</a></li>
+                        <li><a href="product-stl-pack.html">3D Model Kit</a></li>
+                        <li><a href="#products">3D Printing Service</a></li>
+                        <li><a href="#products">Custom PCB Design</a></li>
+                        <li><a href="#products">D1 PCB</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Security Consulting</a></li>
+                        <li><a href="#services">Custom Development</a></li>
+                        <li><a href="#services">Technical Support</a></li>
+                        <li><a href="#services">3D Printing & PCB Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 D1 Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // STL Pack specific functions
+        function purchaseSTLPack() {
+            // Redirect to contact or payment
+            window.location.href = 'index.html#contact';
+        }
+
+        function contactForPurchase() {
+            // Scroll to contact section
+            window.location.href = 'index.html#contact';
+        }
+    </script>
+</body>
+</html>
